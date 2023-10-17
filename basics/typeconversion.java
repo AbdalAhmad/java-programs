@@ -1,4 +1,4 @@
-import java util.*;
+import java.util.*;
 public class typeconversion{
     public static void main (String args []){
         // int a = 25;
@@ -17,9 +17,21 @@ public class typeconversion{
         // System.out.println(lucky);
 
     // type casting
-    float a = 25.12222f;
-    int b = (int )a;
-    System.out.println(b);
+    // float a = 25.12222f;
+    // int b = (int )a;
+    // System.out.println(b);
+    // errror 
+    //  incompatible types: possible lossy conversion from double to float , float marks = 99.999;
+    
+    // float marks = 99.999f;
+    // int marks2 = (int)marks;
+    // System.out.println(marks2);
+
+    
+    // char ch ='a';
+    // int number = ch;
+    // System.out.println(number);
+
  
   
     }
