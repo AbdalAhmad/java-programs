@@ -14,7 +14,7 @@ public class relationaloperator{
      System.out.println(a<b);//true
      System.out.println(a<=b); // true
 
-  //ok
+  
     }
     
     }
