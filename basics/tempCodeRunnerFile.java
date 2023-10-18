@@ -1,16 +1,1 @@
-import java.util.Scanner;
-
-public class numisevenorodd{
-public static void main(String[] args){
-    Scanner abdal = new Scanner(System.in);
-    int number =  abdal.nextInt();
-  
-if(number %2 == 0){
-System.out.println("number is even ");
-}
-else{
-System.out.println("number is not even ");
-
-}
-}
-}
+ int age = (a< 18)? System.out.println("you age is less then 18 "): System.out.println("you age is not less then 18 ");
