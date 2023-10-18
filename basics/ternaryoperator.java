@@ -8,11 +8,13 @@ public static void main(String[] args){
 // System.out.println(type);
 
 Scanner abdal = new Scanner(System.in);
+// int number = abdal.nextInt();
 int number = abdal.nextInt();
 
 
-String  age = ((number >= 60))? "aged":"young";  // String will be used not systemprint here used
-System.out.println(age);
+// String  age = ((number >= 60))? "aged":"young";  // String will be used not systemprint here used
+String  marks = (number >= 33)? "Passed":"Failed";
+System.out.println(marks);
 
 
 
