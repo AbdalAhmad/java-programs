@@ -7,7 +7,7 @@ public class continuea{
 
       for(int i = 0; i< counter ; i++){
 
-        if(counter == 4){
+        if(i == 4){
      continue;
         }else{
         System.out.print("Hello Lucky ");
