@@ -1,7 +1,7 @@
-// star pattern 
+
 
 import java.util.*;
-// using a while loops
+
 
 public class patternone{
 public static void main (String  args []){
