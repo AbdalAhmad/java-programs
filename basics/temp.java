@@ -8,7 +8,7 @@ public static int swap(int n, int m){
           m = temp ; // b store value of  temp  5
            System.out.println("new value of a = "+n);
          System.out.println("new value of b = "+m);  // functionality  is written here 
-  return temp;
+  return temp;  // change value come here only and store here only
 }
 
     public static void main(String [] args){
@@ -17,7 +17,7 @@ public static int swap(int n, int m){
          
         System.out.println("a = "+a);
          System.out.println("b = "+b);
-         int finalr =    swap(a,b);
+         int finalr =    swap(a,b);  // it create a copy 
    
       
 
