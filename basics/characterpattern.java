@@ -11,7 +11,7 @@ for(int line = 1; line <=n ; line++ ){  // 4 can be take as a user // line
         System.out.print(ch);
         ch++;
     }
-    System.out.println(""); // for each line space 
+    System.out.println(""); // for each  line space 
 }
 
 }
