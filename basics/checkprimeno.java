@@ -7,7 +7,7 @@ public class checkprimeno {
     int number = abdal.nextInt();
 
     boolean isprime = true; //define true and false
-    for (int i = 1; i <= number - 1; i++) {
+    for (int i = 2; i <= number - 1; i++) {
       if (number % i == 0) { //when false when this happen // it will give some remainder
         isprime = false; // false it is not prime
         //  System.out.println("is not  a prime a number"); this is wrong
