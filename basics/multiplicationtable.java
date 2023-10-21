@@ -9,7 +9,7 @@ class multiplicationtable{
 
    for (int i = 1; i<=10 ; i++){
     System.out.println(number+"*"+i+"="+number*i);
-   }
+   }   // not store value like factorial and update same value is here   // till 10 also define // till loop
    }
 
 // if system.out.print i outside for loop then we have to print a  int i outside the loop
