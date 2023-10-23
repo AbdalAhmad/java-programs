@@ -18,8 +18,7 @@ public class primenolist {
       for(int i = 2; i<=n;i++){
          if (prime(i)) { 
            System.out.println(i);  // the no will go from there to above function because we have call it and check it 
-        }
-        
+        }   
       }  
     }
     public static void main(String args []){
