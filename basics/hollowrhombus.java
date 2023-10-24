@@ -1,20 +1,24 @@
 import java.util.Scanner;
 
-public class solidrhombus {
+public class hollowrhombus {
 
   public static void number(int rows) {
   
     for (int i = 1; i <= rows; i++) {
-// space
-      for (int j = 1; j <= (rows - i); j++) {
+     for(int j = 1 ; j<=(rows-i); j++){
         System.out.print(" ");
-      }
+     }
 
-   // star
+
       for (int j = 1; j <= rows; j++) {  // j<=n
-        System.out.print("*");
+      if(i == 1 || i== rows || j== 1 || j== rows){
+         System.out.print("*");
+      }else{
+         System.out.print(" ");
       }
-         System.out.println("");
+      
+      }
+        System.out.println(" ");
     }
  
   }
