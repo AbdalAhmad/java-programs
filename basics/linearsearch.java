@@ -17,7 +17,7 @@ public class linearsearch{              // [] this have to print in array here a
 
     int index = position(numbers, key);  // number key are given because to seee at what postion they are equal
 
-     if(index == 0){  // index if for to store value in this function
+     if(index == 0){  // index if for to store value in this function 
        System.out.println("not found");
      }else{
          System.out.println(" found  at "+index);
