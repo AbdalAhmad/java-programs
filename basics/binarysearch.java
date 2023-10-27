@@ -23,6 +23,6 @@ int start = 0 ,  end = number.length -1 ;
     public static void main(String [] args){
 int number [] = {12, 14, 16, 46, 64 };
 int key = 16;  // key h hai
-System.out.println("key is at  "+binarys(number , key ));
+System.out.println("key is at  "+binarys(number , key )); // value are going first then coming in return value
     }
 }
