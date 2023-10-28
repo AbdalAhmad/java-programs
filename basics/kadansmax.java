@@ -9,7 +9,7 @@ public class prefixsumsubarray{
         if(cs<0){
             cs =0;
         }
-        ms = Math.max(cs,ms); // jo bhi max hoga cs or max mein se  vo ms mein chale jayega
+        ms = Math.max(cs,ms); // jo bhi max hoga  cs or max mein se  vo ms mein chale jayega
      }
     }
     public static void  main(String [] args){
