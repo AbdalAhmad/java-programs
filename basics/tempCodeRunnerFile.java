@@ -1,1 +1,1 @@
-star
+ right = nums.length-
