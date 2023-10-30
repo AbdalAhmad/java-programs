@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class updatebit {
 
-  public static int getIthbit(int n, int i) {
-    int bitMAsk = 1 << i;
-    return (n | bitMAsk);
-  }
+//   public static int getIthbit(int n, int i) {
+//     int bitMAsk = 1 << i;
+//     return (n | bitMAsk);
+//   }
 
-  public static int clearithbit(int n, int i) {
-    int bitMAsk = ~(1 << i);
-    return n & bitMAsk;  // last bit 
-  }
+  public static int clearithbit(int n , int i){
+    int bitMAsk = ~(0<<i);
+    return n & bitMAsk;
+    }  // ith bit  
   public  static int updatebit(int n ,int i , int updatevalue){
 //     if(updatevalue == 0){
 //         return clearithbit(n, i); // for 0 it come from clear bit
@@ -27,6 +27,6 @@ return n| (updatevalue<<i); // or i can put direct 0
 
 
   public static void main(String args[]) {
-    System.out.println(updatebit(10,  2, 1)); // 2 digit
+    System.out.println(updatebit(10,  2, 1)); // clearing selected bit to clear // diya tha 10 aya 14 beacuse of update in a bit which is selected
   }
 }
