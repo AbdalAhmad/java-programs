@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class exponentiation {
+public class modularexpo{
 
-  public static int fastExpo(int a, int n) {
+  public static int fastExpo(int a, int n, int m) {
     int intial = 1;
     while (n > 0) {
       if ((n & 1) != 0) {
@@ -11,9 +11,10 @@ public class exponentiation {
       a = a * a;
       n = n >> 1;
     }
-    return intial;
+    return intial%m;
   }
 
   public static void main(String args[]) {
-    System.out.println(fastExpo(5, 3));
+    System.out.println(fastExpo(5, 3,2));
   }
+}

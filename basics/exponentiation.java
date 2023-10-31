@@ -17,3 +17,4 @@ public class exponentiation {
   public static void main(String args[]) {
     System.out.println(fastExpo(5, 3));
   }
+}
