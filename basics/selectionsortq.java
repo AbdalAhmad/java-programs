@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class selectionsortq{
-    public static void bubblesortDescending(int arr []){
+    public static void selectionsortDescending(int arr []){
         for(int turn  = 0; turn<arr.length ; turn++){
             int minPos = turn ;
             for(int j = turn +1; j<arr.length ;j++){
@@ -24,7 +24,7 @@ public class selectionsortq{
     public static void main(String args []){
     int arr [] ={3,6,2,1,8,7,4,5,3,1};
    printa(arr);
-    bubblesortDescending(arr); 
+selectionsortDescending(arr); 
     printa(arr);
     }
 }
