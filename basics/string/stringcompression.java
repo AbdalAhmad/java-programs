@@ -8,11 +8,12 @@ public class stringcompression{
            // aaabc
            while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1) ){
             count++;
-            i++;
-           }// aa
-           newStr  += str.charAt(i); // a3bc
+            i++; // count done here
+           }// aa 
+           newStr  += str.charAt(i); // abc
            if(count>1){
-            newStr += count.toString();
+            newStr += count.toString(); // newstr+count count while print from here  
+            // it will add count element in string  
            }
         }
         return newStr;
