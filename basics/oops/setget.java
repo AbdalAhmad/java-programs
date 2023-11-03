@@ -4,12 +4,10 @@ public class setget{
 
  public static void  main(String args[]){
    Pen a1 = new Pen();
-
-   a1.setColor("Blue"); // here set it value is  passed
+   a1.setColor("blue"); // here set it value is  passed
    System.out.println(a1.getColor()); // call it from here
-   
-  a1.setColor("Yellow");
-   System.out.println(a1.getColor()); 
+  a1.setColor("Yellow"); // here set it value is  passed
+   System.out.println(a1.getColor()); //
  }
 }
 
