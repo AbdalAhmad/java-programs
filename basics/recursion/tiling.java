@@ -10,6 +10,7 @@ public class tiling{
         int ways = fnm1+ fnm2;
         return ways;
     } // added
+    //  tiling problem this can also come for 4*1
     public static void main(String args[]){
      System.out.println(tiling(4));
     }
