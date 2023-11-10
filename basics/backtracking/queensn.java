@@ -23,24 +23,26 @@ public class queensn {
         }
         return true;
     }
-    public static void nQueens(char boards [][], int row ){
+    public static boolean nQueens(char boards [][], int row ){
         //base
         if(row== boards.length){
             // printBoard(boards);
             count ++;
-            return;
+            return true;
         }
         // cloumn loop
         
              for(int j = 0; j<boards.length ; j++){
                 if(isSafe(boards, row, j)){
             boards[row][j] = 'Q';
-            nQueens(boards, row+1); // function call
+            if(nQueens(boards, row+1)){
+                return true;
+            }; // function call
             boards[row][j] = '.'; // backtracking step
         }
         }
        
-
+return false;
     }
     public static void printBoard(char boards [][]){
         System.out.println("----------chessboards---------");
@@ -55,7 +57,7 @@ public class queensn {
    static int count = 0;
 
     public static void main(String args []){
-    int n = 4;
+    int n = 2;
     char boards [][] = new char[n][n];
     // intialize
     for(int i =0; i<n ; i++){
@@ -63,7 +65,14 @@ public class queensn {
             boards [i][j]= '.';
         }
     }
-    nQueens(boards, 0);
-    System.out.println("total no of ways to solve n queens"+ count);
+    
+    if(nQueens(boards, 0)){
+     System.out.println("solution is possible");
+     printBoard(boards);
+    }else{
+      System.out.println("solution is not possible");
+    }
+    //  System.out.println("total no of ways"+count);
+    
     }
 }
