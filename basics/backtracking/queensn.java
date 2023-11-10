@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class queensn {
-    public static void isSafe(char boards [][] , int row , int col){
+    public static boolean isSafe(char boards [][] , int row , int col){
         // vertical up see
         for(int i = row-1; i>= 0; i--){
             if(boards[i][col]=='Q'){
@@ -30,8 +30,9 @@ public class queensn {
             return;
         }
         // cloumn loop
-        if(isSafe(boards, row, j)){
+        
              for(int j = 0; j<boards.length ; j++){
+                if(isSafe(boards, row, j)){
             boards[row][j] = 'Q';
             nQueens(boards, row+1); // function call
             boards[row][j] = '.'; // backtracking step
