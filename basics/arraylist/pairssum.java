@@ -15,8 +15,8 @@ public class pairssum {
 
 // 2 pointer approach
 public static boolean pairSum (ArrayList<Integer> list, int target){
-    int lp =0;
-    int rp = list.size()-1;
+    int lp =0;  // smallest 
+    int rp = list.size()-1; // largest
     while(lp != rp){
         // case 1
         if(list.get(lp)+list.get(rp) == target){
@@ -47,3 +47,4 @@ public static boolean pairSum (ArrayList<Integer> list, int target){
      System.out.println(pairSum(list,target));
     }
 }
+
