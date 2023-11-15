@@ -35,14 +35,31 @@ public class linked{
     tail.next = newNode;
     tail = newNode;
    }
+   public void print(){
+    if(head == null){
+        System.out.println("ll is an empty");
+        return;
+    }
+    Node temp = head;
+    while(temp != null){
+        System.out.print(temp.data+ "->");
+        temp = temp.next;
+    }
+    System.out.println("null");
+   }
 
     public static void main(String args[]){
-     Linked ll = new LinkedList();
-      ll.head = new Node(1);
-      ll.head.next = new Node(2);
-      ll.addFirst(1);
+     linked ll = new linked();
+    //   ll.head = new Node(1);
+    //   ll.head.next = new Node(2);
+  ll.print();
       ll.addFirst(2);
-   ll.addLast(1);
-   ll.addLast(2);
+        ll.print();
+      ll.addFirst(1);
+  ll.print();
+   ll.addLast(3);
+     ll.print();
+   ll.addLast(4);
+     ll.print();
     }
 }
