@@ -35,7 +35,9 @@ public class linked{
     tail.next = newNode;
     tail = newNode;
    }
-   public void print(){
+
+
+   public void print(){ // O(n)
     if(head == null){
         System.out.println("ll is an empty");
         return;
@@ -47,6 +49,28 @@ public class linked{
     }
     System.out.println("null");
    }
+
+   public void add(int index, int data){
+    if(index ==0){// add value at head
+      addFirst(data);
+      return;
+    }
+    Node newNode = new Node(data);
+    Node temp = head;
+    int i = 0;  // i = 2
+
+     while(i<index-1){ // prev find
+        temp = temp.next; // increase
+        i++;
+
+     }
+     // when temp equal to i
+     // i = index-1 ; temp->prev  temp mein previous value add hogai
+     newNode.next = temp.next;
+     temp.next = newNode;
+     
+   }
+
 
     public static void main(String args[]){
      linked ll = new linked();
@@ -60,6 +84,8 @@ public class linked{
    ll.addLast(3);
      ll.print();
    ll.addLast(4);
+  ll.add(2,9);
+
      ll.print();
     }
 }
