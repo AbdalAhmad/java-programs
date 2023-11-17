@@ -11,9 +11,12 @@ public class linked{
     }
     public static Node head;
     public static Node tail;
+    public static int size;
+
     public void addFirst(int data){
      // step 1 = create new node
      Node newNode = new Node(data);
+     size++; // count
      if(head == null){
     head = tail = newNode;
     return;
@@ -28,6 +31,7 @@ public class linked{
     // for last value
    public void addLast(int data){
     Node newNode = new Node(data);
+    size++; // count
     if(head == null){
         head = tail = newNode;
         return;
@@ -45,7 +49,7 @@ public class linked{
     Node temp = head;
     while(temp != null){
         System.out.print(temp.data+ "->");
-        temp = temp.next;
+        temp = temp.next; // head ke next
     }
     System.out.println("null");
    }
@@ -56,11 +60,13 @@ public class linked{
       return;
     }
     Node newNode = new Node(data);
+
+    size++; // count
     Node temp = head;
     int i = 0;  // i = 2
 
      while(i<index-1){ // prev find
-        temp = temp.next; // increase
+        tem= temp p.next; // increase
         i++;
 
      }
@@ -87,5 +93,6 @@ public class linked{
   ll.add(2,9);
 
      ll.print();
+     System.out.println(ll.size);
     }
 }
