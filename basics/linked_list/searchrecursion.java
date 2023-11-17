@@ -1,12 +1,9 @@
 import java.util.*;
 
-public class lastremove {
-
+public class searchrecursion {
   public static class Node {
-
     int data;
     Node next;
-
     public Node(int data) {
       this.data = data;
       this.next = null;
@@ -122,8 +119,26 @@ public class lastremove {
     return -1;
   }
 
+public int helper(Node head , int key){
+    if(head == null){
+        return -1;
+
+    }
+    if(head.data == key){
+        return 0;
+    }
+    int index = helper(head.next , key);
+        if(index == -1){
+          return -1;
+        }
+        return index+1;
+    
+}
+public int recSearch(int key){
+    return helper(head , key);
+}
   public static void main(String args[]) {
-    lastremove ll = new lastremove();
+    searchrecursion ll = new searchrecursion();
 
     ll.addFirst(2);
     ll.addFirst(1);
@@ -132,7 +147,9 @@ public class lastremove {
     ll.add(2, 9);
 
     System.out.println(ll.size);
-    System.out.println(ll.itrSearch(3));
-    System.out.print(ll.itrSearch(10));
+    System.out.println(ll.recSearch(3));
+    // System.out.print(ll.itrSearch(10));
+    System.out.print(ll.recSearch(10));
+
   }
 }
