@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class searchrecursion {
-  public static class Node {
+  public static class Node { 
     int data;
     Node next;
     public Node(int data) {
@@ -121,22 +121,22 @@ public class searchrecursion {
 
 public int helper(Node head , int key){
     if(head == null){
-        return -1;
-
+        return -1; // 
     }
     if(head.data == key){
-        return 0;
+        return 0;// by recursion
     }
     int index = helper(head.next , key);
         if(index == -1){
           return -1;
         }
         return index+1;
-    
 }
+
 public int recSearch(int key){
     return helper(head , key);
-}
+}// by recursion
+
   public static void main(String args[]) {
     searchrecursion ll = new searchrecursion();
 
@@ -145,7 +145,7 @@ public int recSearch(int key){
     ll.addLast(3);
     ll.addLast(4);
     ll.add(2, 9);
-
+ll.print();
     System.out.println(ll.size);
     System.out.println(ll.recSearch(3));
     // System.out.print(ll.itrSearch(10));
