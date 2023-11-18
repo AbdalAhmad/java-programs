@@ -53,6 +53,33 @@ public void reverse() {
     }
     head = prev;
   }
+
+
+  public void deleteNthfromEnd(int n ){
+   // calculate size
+   int sz = 0;
+   Node temp = head;
+   while(temp!= null){
+      temp = temp.next;
+      sz++;
+   }
+   if(n== sz){
+      head = head.next; // remove first
+      return;
+   }
+   // sz
+   int i = 1;
+   int iTofind = sz-n;
+   Node prev  = head;
+   while(i<iTofind){
+    prev = prev.next;
+    i++;
+   }
+   prev.next = prev.next.next;
+   return;
+  }
+
+
   public static void main(String args[]) {
     reverse ll = new reverse();
     ll.addFirst(4);
@@ -61,7 +88,8 @@ public void reverse() {
     ll.addFirst(1);
 
     ll.print();
-    ll.reverse();
+    // ll.reverse();
+    ll.deleteNthfromEnd(3);
     ll.print();
   }
 }
