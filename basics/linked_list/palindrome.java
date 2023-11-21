@@ -90,8 +90,6 @@ public Node findMid(Node head){
     ll.addFirst(3);
 
     ll.print();
-    // ll.reverse();
-    // ll.deleteNthfromEnd(3);
 System.out.println(ll.checkPalindrome());
     
   }
