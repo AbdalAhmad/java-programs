@@ -88,7 +88,7 @@ public Node findMid(Node head){
     ll.addFirst(2);
     ll.addFirst(2);
     ll.addFirst(3);
-/// aded
+// not added 
     ll.print();
 System.out.println(ll.checkPalindrome());
     
